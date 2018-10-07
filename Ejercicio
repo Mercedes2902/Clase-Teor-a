@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    char letra;
+    cin >> letra;
+
+    int numero;
+    cin >> numero;
+
+    for(int i = 1; i <= numero; i++)
+        cout << letra << endl;
+    return 0;
+}
