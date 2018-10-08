@@ -1,0 +1,20 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main() {
+    int numero, factorial = 1, suma = 0;
+
+    cout << "Digite un numero: "; cin >> numero;
+
+    for (int i = 1; i <= numero; i++){
+        factorial = factorial * i;
+        suma = suma + factorial;
+    }
+
+    cout << "\n El factorial del numero es: " << factorial << endl;
+    cout << "La suma de los factoriales es: " << suma << endl;
+
+    getch();
+    return 0;
+}
