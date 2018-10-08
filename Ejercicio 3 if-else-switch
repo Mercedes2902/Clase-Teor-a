@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int numero;
+    int n;
+    cout << "1: Hallar el cubo de ese numero" << endl;
+    cout << "2: Determinar si el numero es par o impar" << endl;
+    cout << "3: Salir" << endl;
+    cout << "Ingrese opcion: ";
+    cin >> numero;
+    switch(numero){
+        case 1:
+            cout << "Ingrese numero: ";
+            cin >> n;
+            cout << "El numero " << n << "al cubo es " << pow(n, 3); break;
+        case 2:
+            cout << "Ingrese numero: ";
+            cin >> n;
+            if (n == 0){
+                cout << "El numero es cero";
+            } else if (n%2 == 0){
+                cout << "El numero es par";
+            }
+            else{
+                cout << "El numero es impar";
+            }
+            break;
+        default: cout << "Gracias por participar";
+    }
+    return 0;
+}
